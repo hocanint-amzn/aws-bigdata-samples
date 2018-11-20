@@ -1,0 +1,171 @@
+{
+    "widgets": [
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 3,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "EMR/YarnUsage", "Total Virtual Cores", "Jobflow Id", "All Clusters", "Queue Name", "root.qa", { "yAxis": "right" } ],
+                    [ "...", "root.engineers", { "yAxis": "right" } ],
+                    [ "...", "root.scientists", { "yAxis": "right" } ],
+                    [ "...", "root.default", { "yAxis": "right" } ],
+                    [ ".", "Total Virtual Cores Available", ".", ".", { "color": "#000000" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": true,
+                "region": "us-east-1",
+                "title": "Total Virtual Cores Usage By Queue",
+                "period": 300,
+                "stat": "Sum",
+                "yAxis": {
+                    "left": {
+                        "max": 100
+                    },
+                    "right": {
+                        "max": 100
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 9,
+            "y": 3,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "EMR/YarnUsage", "Total Yarn Memory Available", "Jobflow Id", "All Clusters", { "color": "#000000" } ],
+                    [ ".", "Total Yarn Memory", "User", "mert", "Jobflow Id", "All Clusters", { "yAxis": "right" } ],
+                    [ "...", "joe", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "john", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mike", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "anthony", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "subrina", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mark", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "lisa", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "rachael", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "vienna", ".", ".", { "yAxis": "right" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": true,
+                "region": "us-east-1",
+                "title": "Total Yarn Memory Usage By Queue",
+                "period": 300,
+                "stat": "Sum",
+                "yAxis": {
+                    "right": {
+                        "max": 160000
+                    },
+                    "left": {
+                        "max": 160000
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 9,
+            "y": 9,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "EMR/YarnUsage", "Total Yarn Memory", "User", "lisa", "Jobflow Id", "All Clusters", { "yAxis": "right" } ],
+                    [ "...", "john", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "rachael", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mert", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "joe", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mike", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "anthony", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "subrina", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mark", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "vienna", ".", ".", { "yAxis": "right" } ],
+                    [ ".", "Total Yarn Memory Available", "Jobflow Id", "All Clusters", { "color": "#000000" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": true,
+                "region": "us-east-1",
+                "title": "Total Virtual Memory Usage By User",
+                "period": 300,
+                "stat": "Sum",
+                "yAxis": {
+                    "left": {
+                        "max": 160000
+                    },
+                    "right": {
+                        "max": 160000
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 9,
+            "width": 9,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "EMR/YarnUsage", "Total Virtual Cores", "User", "anthony", "Jobflow Id", "All Clusters", { "yAxis": "right" } ],
+                    [ "...", "mark", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "joe", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mert", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "subrina", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "john", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "mike", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "lisa", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "rachael", ".", ".", { "yAxis": "right" } ],
+                    [ "...", "vienna", ".", ".", { "yAxis": "right" } ],
+                    [ ".", "Total Virtual Cores Available", "Jobflow Id", "All Clusters", { "color": "#000000" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": true,
+                "region": "us-east-1",
+                "title": "Total Virtual Cores Usage By User",
+                "period": 300,
+                "stat": "Sum",
+                "yAxis": {
+                    "left": {
+                        "max": 120
+                    },
+                    "right": {
+                        "max": 120
+                    }
+                }
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 3,
+            "properties": {
+                "metrics": [
+                    [ "EMR/YarnUsage", "Total Yarn Memory Available", "Jobflow Id", "All Clusters", { "id": "m2" } ],
+                    [ { "expression": "m3+m5+m7+m10", "label": "Total Yarn Memory Used", "id": "e2", "stat": "Sum" } ],
+                    [ { "expression": "e2/m2*100", "label": "Percentage Yarn Memory Used", "id": "e4" } ],
+                    [ "EMR/YarnUsage", "Total Virtual Cores Available", "Jobflow Id", "All Clusters", { "id": "m1" } ],
+                    [ { "expression": "m4+m6+m8+m9", "label": "Total Virtual Cores Used", "id": "e1", "stat": "Sum" } ],
+                    [ { "expression": "e1/m1*100", "label": "Percentage Virtual Cores Used", "id": "e3" } ],
+                    [ "EMR/YarnUsage", "Total Virtual Cores", "Jobflow Id", "All Clusters", "Queue Name", "root.qa", { "id": "m4", "visible": false } ],
+                    [ "...", "root.engineers", { "id": "m6", "visible": false } ],
+                    [ "...", "root.scientists", { "id": "m8", "visible": false } ],
+                    [ "...", "root.default", { "id": "m9", "visible": false } ],
+                    [ ".", "Total Yarn Memory", ".", ".", ".", "root.engineers", { "id": "m3", "visible": false } ],
+                    [ "...", "root.qa", { "id": "m5", "visible": false } ],
+                    [ "...", "root.scientists", { "id": "m7", "visible": false } ],
+                    [ "...", "root.default", { "id": "m10", "visible": false } ]
+                ],
+                "view": "singleValue",
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        }
+    ]
+}
