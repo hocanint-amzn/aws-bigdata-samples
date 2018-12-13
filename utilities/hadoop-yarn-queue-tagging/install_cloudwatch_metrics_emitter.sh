@@ -5,7 +5,7 @@ sudo pip install boto3
 
 sudo mkdir /usr/lib/publish_yarn_metrics/
 chown hadoop:hadoop /usr/lib/publish_yarn_metrics/
-wget -O /usr/lib/publish_yarn_metrics/ https://github.com/hocanint-amzn/aws-bigdata-samples/raw/master/utilities/hadoop-yarn-queue-tagging/publish_capacity_scheduler_stats_to_cloudwatch.py
+wget -O /usr/lib/publish_yarn_metrics/publish_capacity_scheduler_stats_to_cloudwatch.py https://github.com/hocanint-amzn/aws-bigdata-samples/raw/master/utilities/hadoop-yarn-queue-tagging/publish_capacity_scheduler_stats_to_cloudwatch.py
 
 REGION=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed -r 's/.$//g'`
 TMP_CRON_FILE_PATH=/tmp/tmp_cron_tab
